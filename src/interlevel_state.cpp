@@ -51,7 +51,7 @@ int CRoadFighter::interlevel_cycle(void)
 			score1=*l[0];
 			if (n_players>1 && l.Length()>1) score2=*l[1];
 		} else {
-			Sound_create_music("sd:/apps/roadfighter-wii/sound/start.mp3",0);
+			Sound_create_music("sd:/apps/roadfighter-wii/sound/start.ogg",0);
 		} /* if */ 
 
 		if (current_level>nlevels) {

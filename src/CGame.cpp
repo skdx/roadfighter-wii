@@ -209,18 +209,18 @@ void CGame::init_game(char *mapname)
 		CAR_INTERVAL=12;
 	} /* if */ 
 
-	S_takefuel=Sound_create_sound("sd:/apps/roadfighter-wii/sound/takefuel.mp3");
-	S_redlight=Sound_create_sound("sd:/apps/roadfighter-wii/sound/redlight.mp3");
-	S_greenlight=Sound_create_sound("sd:/apps/roadfighter-wii/sound/greenlight.mp3");
-	S_crash=Sound_create_sound("sd:/apps/roadfighter-wii/sound/car_crash.mp3");
-	S_carstart=Sound_create_sound("sd:/apps/roadfighter-wii/sound/car_start.mp3");
-	S_fuelempty=Sound_create_sound("sd:/apps/roadfighter-wii/sound/fuelempty.mp3");
-	S_caradvance=Sound_create_sound("sd:/apps/roadfighter-wii/sound/car_pass.mp3");
-	S_carengine=Sound_create_sound("sd:/apps/roadfighter-wii/sound/car_running.mp3");
-	S_carskid=Sound_create_sound("sd:/apps/roadfighter-wii/sound/car_brake.mp3");
+	S_takefuel=Sound_create_sound("sd:/apps/roadfighter-wii/sound/takefuel.wav");
+	S_redlight=Sound_create_sound("sd:/apps/roadfighter-wii/sound/redlight.wav");
+	S_greenlight=Sound_create_sound("sd:/apps/roadfighter-wii/sound/greenlight.wav");
+	S_crash=Sound_create_sound("sd:/apps/roadfighter-wii/sound/car_crash.wav");
+	S_carstart=Sound_create_sound("sd:/apps/roadfighter-wii/sound/car_start.wav");
+	S_fuelempty=Sound_create_sound("sd:/apps/roadfighter-wii/sound/fuelempty.wav");
+	S_caradvance=Sound_create_sound("sd:/apps/roadfighter-wii/sound/car_pass.wav");
+	S_carengine=Sound_create_sound("sd:/apps/roadfighter-wii/sound/car_running.wav");
+	S_carskid=Sound_create_sound("sd:/apps/roadfighter-wii/sound/car_brake.wav");
 	S_water=Sound_create_sound("sd:/apps/roadfighter-wii/sound/water.wav");
 	S_collision=Sound_create_sound("sd:/apps/roadfighter-wii/sound/collision.wav");
-	S_truck=Sound_create_sound("sd:/apps/roadfighter-wii/sound/truck.mp3");
+	S_truck=Sound_create_sound("sd:/apps/roadfighter-wii/sound/truck.wav");
 
 	fastcar_counter=0;
 	esc_pressed=false;
@@ -438,8 +438,8 @@ bool CGame::cycle(unsigned char *keyboard,unsigned char *old_keyboard)
 		if (start_delay2>0) {
 			start_delay2--;
 			if (start_delay2==0) {
-				if ((current_level%2)==1) Sound_create_music("sd:/apps/roadfighter-wii/sound/game_theme.mp3",-1);
-									 else Sound_create_music("sd:/apps/roadfighter-wii/sound/game_theme2.mp3",-1);
+				if ((current_level%2)==1) Sound_create_music("sd:/apps/roadfighter-wii/sound/game_theme.ogg",-1);
+									 else Sound_create_music("sd:/apps/roadfighter-wii/sound/game_theme2.ogg",-1);
 			} /* if */ 
 		} /* if */ 
 	} /* if */ 

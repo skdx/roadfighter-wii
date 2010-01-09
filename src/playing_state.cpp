@@ -100,7 +100,7 @@ int CRoadFighter::playing_cycle(void)
 	} else {
 		if (!playing_reachedend && game->level_completed()) {
 			playing_reachedend=true;
-			Sound_create_music("sd:/apps/roadfighter-wii/sound/levelcomplete.mp3",0);
+			Sound_create_music("sd:/apps/roadfighter-wii/sound/levelcomplete.ogg",0);
 		} /* if */ 
 	} /* if */ 
 
