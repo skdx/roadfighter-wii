@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<app version="0.9">
+  <name>Road Fighter Wii</name>
+  <coder>Moreira</coder>
+  <version>0.9</version>
+  <release_date>20100109</release_date>
+  <short_description>A remake of the MSX classic: Road Fighter</short_description> 
+  <long_description>
+Road Fighter was an MSX game released in 1985 by Konami. In 2003, the Brain Games team released a remake of this game with double-resolution graphics (and other subtle changes), written in SDL:
+
+http://www.braingames.getput.com/roadf/default.asp
+
+Credits for the original team:
+
+Programming: Santi Ontan 
+Graphics: Miikka Poikela 
+Music/SFX: Jorrith Schaap 
+Beta Testing: Jason Eames, Miikka Poikela, Jorrith Schaap, Santi Ontan 
+</long_description> 
+</app>
