@@ -128,9 +128,9 @@ CRoadFighter::CRoadFighter(void)
 	}
 
 	S_menu_move=Sound_create_sound("sd:/apps/roadfighter-wii/sound/menu_move.wav");
-	S_menu_select=Sound_create_sound("sd:/apps/roadfighter-wii/sound/menu_select.mp3");
-	S_menu_in=Sound_create_sound("sd:/apps/roadfighter-wii/sound/logo_in.mp3");
-	S_menu_out=Sound_create_sound("sd:/apps/roadfighter-wii/sound/logo_out.mp3");
+	S_menu_select=Sound_create_sound("sd:/apps/roadfighter-wii/sound/menu_select.wav");
+	S_menu_in=Sound_create_sound("sd:/apps/roadfighter-wii/sound/logo_in.wav");
+	S_menu_out=Sound_create_sound("sd:/apps/roadfighter-wii/sound/logo_out.wav");
 
 	replay_fp=0;
 

@@ -40,7 +40,7 @@ int CRoadFighter::menu_cycle(void)
 		menu_current_menu=0;
 		menu_redefining_key=-1;
 		if (S_menu_in!=0) Sound_play(S_menu_in);
-		Sound_create_music("sd:/apps/roadfighter-wii/sound/menu_theme.mp3",-1);
+		Sound_create_music("sd:/apps/roadfighter-wii/sound/menu_theme.ogg",-1);
 		menu_credits_timmer=0;
 	} /* if */ 
 

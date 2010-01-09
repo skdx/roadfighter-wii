@@ -20,7 +20,7 @@ int CRoadFighter::gameover_cycle(void)
 		gameover_state=0;
 		gameover_timmer=0;
 		Sound_music_volume(MIX_MAX_VOLUME);
-		Sound_create_music("sd:/apps/roadfighter-wii/sound/gameover.mp3",0);
+		Sound_create_music("sd:/apps/roadfighter-wii/sound/gameover.ogg",0);
 	} /* if */ 
 
 	if (gameover_state==1) {
