@@ -439,7 +439,14 @@ bool CPlayerCarObject::cycle(unsigned char *keyboard,unsigned char *old_keyboard
 		if (o!=0) {
 			fuel+=FUEL_RECHARGE;
 			if (fuel>=MAX_FUEL) fuel=MAX_FUEL;
-			game->todelete.Add(o);
+            if (game->todelete.SearchObjRef(o) == -1) {
+                // List class' Add method() does not guarantee unicity of their
+                // elements. The condition above ensures that this fuel heart 
+                // object will only be added once to the List.
+                // The line below was inconditional, and caused a crash when
+                // both players reached the heart simultaneously  (double free) 
+                game->todelete.Add(o);
+            }
 			bonus=next_bonus;
 			score+=next_bonus;
 			bonus_timmer=64;
